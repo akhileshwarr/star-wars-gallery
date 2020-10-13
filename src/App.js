@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
+import { Home } from './components/views/Home' 
+import { People } from './components/views/People' 
+import { ThemeContext, themes } from './context/theme';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { useDispatch, useSelector } from "react-redux";
+
+import { toggleTheme } from './store/actions'
+const App = () => {
+
+  const checked = useSelector(state => state.themeState);
+  const dispatch = useDispatch();
+  const toggleThemeHandler  = (e,value) => {
+    dispatch(toggleTheme(value))
+  }
+  
+  return(
+    <ThemeContext.Provider value = {checked ? themes.light : themes.dark}>
+      <Router>
+        <Switch>
+          <Route exact path="/" render={()=><Redirect to="/home"/>}/>
+          <Route path="/home" render = {(props)=> <Home  checked = {checked} toggleTheme = {toggleThemeHandler} {...props}/>} />
+          <Route path="/people" render = {(props)=> <People  checked = {checked} toggleTheme = {toggleThemeHandler} {...props}/>} />
+        </Switch>
+      </Router>
+  </ThemeContext.Provider>
+  )
 }
 
 export default App;

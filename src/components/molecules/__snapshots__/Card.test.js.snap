@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`/Card renders snapshot 1`] = `
+<div
+  className="MuiPaper-root MuiCard-root makeStyles-root-1 MuiPaper-elevation1 MuiPaper-rounded"
+  style={
+    Object {
+      "backgroundColor": "black",
+    }
+  }
+>
+  <div
+    className="MuiCardContent-root"
+  >
+    <h2
+      className="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextSecondary"
+    >
+      <span
+        className="genralSpan"
+        style={
+          Object {
+            "color": "#ffffff",
+          }
+        }
+      >
+        sample
+      </span>
+    </h2>
+    <p
+      className="MuiTypography-root makeStyles-title-3 MuiTypography-body1"
+    >
+      <span
+        className="genralSpan"
+        style={
+          Object {
+            "color": "#ffffff",
+          }
+        }
+      >
+        Height : 
+        sample
+      </span>
+    </p>
+    <p
+      className="MuiTypography-root makeStyles-pos-4 MuiTypography-body1 MuiTypography-colorTextSecondary"
+    >
+      <span
+        className="genralSpan"
+        style={
+          Object {
+            "color": "#ffffff",
+          }
+        }
+      >
+         Gender : 
+        gender
+      </span>
+    </p>
+    <p
+      className="MuiTypography-root MuiTypography-body2"
+    >
+      <span
+        className="genralSpan"
+        style={
+          Object {
+            "color": "#ffffff",
+          }
+        }
+      >
+        Films:
+      </span>
+       
+      <br />
+      <span
+        className="genralSpan"
+        style={
+          Object {
+            "color": "#ffffff",
+          }
+        }
+      >
+        filim1
+      </span>
+      <br />
+    </p>
+  </div>
+  <div
+    className="MuiCardActions-root MuiCardActions-spacing"
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      style={Object {}}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        <span
+          className="genralSpan"
+          style={
+            Object {
+              "color": "#ffffff",
+            }
+          }
+        >
+          Learn More
+        </span>
+      </span>
+    </button>
+  </div>
+</div>
+`;
