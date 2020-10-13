@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
+import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
 import { Home } from './components/views/Home' 
 import { People } from './components/views/People' 
 import { ThemeContext, themes } from './context/theme';
@@ -17,13 +17,13 @@ const App = () => {
   
   return(
     <ThemeContext.Provider value = {checked ? themes.light : themes.dark}>
-      <Router>
+      <HashRouter>
         <Switch>
           <Route exact path="/" render={()=><Redirect to="/home"/>}/>
           <Route path="/home" render = {(props)=> <Home  checked = {checked} toggleTheme = {toggleThemeHandler} {...props}/>} />
           <Route path="/people" render = {(props)=> <People  checked = {checked} toggleTheme = {toggleThemeHandler} {...props}/>} />
-        </Switch>
-      </Router>
+        </Switch> 
+      </HashRouter>
   </ThemeContext.Provider>
   )
 }
