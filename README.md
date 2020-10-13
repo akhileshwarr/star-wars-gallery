@@ -14,7 +14,7 @@ You will also see any lint errors in the console.
 
 
 ### `npm run storybook`
-to explore uicomponents 
+to explore ui components 
 
 ### `npm test`
 
