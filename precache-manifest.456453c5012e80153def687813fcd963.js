@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "11578fdd37a2a656289b4cc3570d58c0",
+    "revision": "72babf6aca9c30c5e75b12ec22a0b7be",
     "url": "/star-wars-gallery/index.html"
   },
   {
-    "revision": "86968b96ab9a978b645e",
+    "revision": "b0d4b8e4a638e4e69a9c",
     "url": "/star-wars-gallery/static/css/main.0a26df67.chunk.css"
   },
   {
-    "revision": "e3363ab0a86c56e48b76",
-    "url": "/star-wars-gallery/static/js/2.7cf351c1.chunk.js"
+    "revision": "fd050499472d91be4297",
+    "url": "/star-wars-gallery/static/js/2.292d6008.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/star-wars-gallery/static/js/2.7cf351c1.chunk.js.LICENSE.txt"
+    "url": "/star-wars-gallery/static/js/2.292d6008.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "86968b96ab9a978b645e",
-    "url": "/star-wars-gallery/static/js/main.9dc5aac0.chunk.js"
+    "revision": "b0d4b8e4a638e4e69a9c",
+    "url": "/star-wars-gallery/static/js/main.0ce4b8f4.chunk.js"
   },
   {
     "revision": "36269356e1ec26e2288e",
